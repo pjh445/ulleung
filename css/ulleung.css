@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box;}
+html,body {font:10pt/180% "맑은 고딕","돋움"; color:#333; }
+img {max-width:100%; display:block;}
+a {text-decoration:none; color:#333;}
+
+#layout {width:1200px; margin:auto;}
+
+/*상단*/
+header {position:absolute; width:1200px; height:110px; top:0; z-index:1; background:#3d63a7;}
+header>div {display:flex; padding-top:20px;  align-items:flex-end; height:110px; background:white;}
+header h1 {flex:1;}
+header h1 a {display:block;}
+header h1 img {transform:translate(40px,0px); padding-bottom:15px;}
+
+/*주메뉴*/
+header ul {flex:1.5; list-style:none; display:flex; padding-bottom:15px;}
+header li {position:relative; flex:1;}
+header li>a {color:black; display:block; text-align:center; padding:8px; font-weight:bold; font-size:1.15rem;}
+header li>a:hover, header li>a.active {color:red;}
+
+/*부메뉴*/
+header nav {position:absolute; width:100%; padding:20px 5px; display:none;}
+header nav a {color:white; display:block; text-decoration:none; font-weight:bold; text-align:center;padding:5px; padding-bottom:7px;}
+header nav a:hover {color:#00ffde; }
+
+/*슬라이드*/
+#visual 	{position:relative; height:413px; margin-top:150px;}
+#visual>a	{position:absolute; width:100%; }
+#visual img {width:1200px;}
+
+
+/*메인*/
+main {height:200px; display:flex; padding-top:30px; margin:40px 0;}
+main>section:not(:last-child) {margin-right:30px;}
+
+main h2 {display:inline-block; border:1px solid red; color:red; padding:3px 7px; font-size:1.1rem;}
+
+
+/*여행 꿀팁*/
+#tip {flex:1;}
+#tip>div {display:flex; justify-content:space-around; margin-top:20px;}
+#tip section:not(:last-child) {padding-right:15px;}
+#tip img {width:100%;}
+#tip h3  {font-size:1rem; text-align:center; padding-top:5px;}
+#tip a:hover {color:#3d63a7; text-decoration:underline;}
+
+/*바로가기*/
+#quick 	{flex:0.8;}
+#quick> h2{display:none;}
+#quick> a {display:block; margin-top:45px; text-align:center;}
+
+/*공지사항*/
+#notice {flex:0.8;}
+#notice>ul {list-style:none;  margin-top:10px;}
+#notice li {position:relative; padding:3px; border-bottom:1px dashed #666;}
+#notice a {display:inline-block; color:#333;}
+#notice a:hover {color:red;/*보조색*/;}
+#notice span {position:absolute; right:0;}
+
+
+/*하단*/
+footer {height:100px; background:#e6e6e6; color:black; display:flex; padding:5px 20px; align-items:center; font-size:0.9rem;}
+footer p {flex:1;}
+footer a {display:inline; color:black;}
+footer a:hover {color:black; text-decoration:underline;}
+footer span {color:#999; padding:0 5px; display:inline-block; transform:translateY(-1px);}
+footer select {padding:4px 8px 2px 8px;}
+
+/*공지사항*/
+#black {position:fixed; top:0; z-index:1;width:100%; height:100vh; background:rgba(0,0,0,0.9); display:none;}
+#black> section {width:400px; padding:20px; position:absolute; top:10%; left:30%; background:white;}
+#black h3 {background:black; color:white; padding:5px; text-align:center; margin-bottom:10px;}
+#black img {width:100%; margin-bottom:20px;}
+#black input {position:absolute; bottom:20px; right:20px; padding:3px 10px;}
+
+
+
+
+
+
